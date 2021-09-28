@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+#clockDiv{
+	height: 30rem;
+	width: 30rem;
+	margin: auto;
+	background: url("clock.png");
+	background-size: 100% 100%;
+	position: relative;
+	border-radius: 15rem;
+}
+
+#hour,#minute,#second{
+	border-radius: 2rem;
+	left: 14.86rem;
+	position: absolute;
+	width: 0.2rem;
+		
+}
+#hour{
+	background:  #272525;
+	height: 6rem;
+	opacity: 0.8;
+    top: 9.1rem;
+	transform-origin: bottom;
+	transform: rotate(45deg);
+
+
+}
+
+#minute{
+	background: #5E5A59;
+	height: 8rem;
+	opacity: 0.6;
+    top: 7.1rem;
+	transform-origin: bottom;
+	transform: rotate(90deg);
+
+	
+}
+
+#second{
+	background: #B6B2B1;
+	height: 10rem;
+	opacity: 0.6;
+	top: 5.1rem;
+	transform-origin: bottom;
+
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+.container{
+	display: flex;
+	justify-content: space-around;
+	margin: 1rem;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+#divH,#divM,#divS{
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+
+#divH p,#divM p, #divS p{
+	margin: auto;
+	text-align: center;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.xmlCode{
+  margin-top: 4rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+}
+ul{
+	list-style: none;
+}
